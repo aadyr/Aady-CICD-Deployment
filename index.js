@@ -4,7 +4,7 @@ module.exports.handler = async (event) => {
       body: JSON.stringify(
         {
           message: "Your function executed successfully!",
-          access_key: process.env.aady-test
+          access_key: process.env.ACCESS_KEY
         },
         null,
         2
