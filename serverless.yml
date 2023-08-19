@@ -1,0 +1,21 @@
+service: aady-cicd-deployment
+frameworkVersion: '3'
+
+provider:
+ name: aws
+ region: ap-southeast-1
+ runtime: nodejs18.x
+ deploymentBucket:
+    name: cohort2.serverless.deploys
+
+functions:
+  api:
+     handler: index.handler
+     events:
+       - httpApi:
+           path: /
+           method: get
+
+plugins:
+  - serverless-offline
+

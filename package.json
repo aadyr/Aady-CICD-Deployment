@@ -1,0 +1,14 @@
+{
+  "name": "aady-cicd-deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless-offline": "^12.0.4"
+  }
+}
